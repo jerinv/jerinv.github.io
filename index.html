@@ -23,8 +23,8 @@
   <link rel="shortcut icon" type="image/png" href="./images/favicon.png" />
 
   <!-- Put your site title here -->
-    Jerin Varghese | A Federal Data Scientist.
   <title>
+  Jerin Varghese Portfolio
   </title>
 
   <meta name="description" content="Add small description of yourslef.">
@@ -42,7 +42,7 @@
       <nav class="nav" role="navigation">
         <ul class="nav__items">
           <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
-          <li class="nav__item"><a href="#clients" class="nav__link">Skills</a></li>
+          <li class="nav__item"><a href="#clients" class="nav__link">Technical Skills</a></li>
           <li class="nav__item">
             <a href="#about" class="nav__link">About</a>
           </li>
@@ -59,7 +59,7 @@
           <span>Jerin Varghese</span>
         </h1>
         <!-- Put a small paragraph about yourself -->
-        <p>A Federal Data Scientist.</p>
+        <p>A Data Enthusiast. A Fast Learner. A Pythonist.</p>
         <a href="#contact" class="btn btn--pink">Get in touch</a>
       </div>
     </div>
@@ -75,87 +75,150 @@
         <div class="work__boxes">
 
           <!-- Each div with the work__box class is a project. -->
-
-          <div class="work__box">
+		  
+		    <div class="work__box">
             <div class="work__text">
-              <h3>Portfolio Template</h3>
+              <h3>Industry Productivity Analysis Web App</h3>
               <p>
-                A free Open Source Portfolio for anyone to use for free.
+                The Division of Industry Productivity Studies publishes labor productivity and costs data by industry on an annual basis. Every year,
+				there are multiple releases - each one updating a different group of industries (i.e. manufacturing, trade, etc.). To accompany
+				each release of new data, economists analyze the updated data and search for the main story of the year. Many approaches to analyzing
+				the new data are repeated each year, across each release.
               </p>
+			  <p>
+			  My idea was that - if there are tasks being repeated, then there is an opportunity for automation. Using Python, I led a small team
+			  in developing a web application that pulled live data from the division's SQL Server database, and allowed users to select different 
+			  types of analysis to quickly obtain statistical calculations and visualizations. This product was well received by both
+			  managers and analysts alike, as it automated the bread and butter analysis done in the office, and saved days of work done each year before each release.
+			  </p>
+			
               <ul class="work__list">
-                <li>HTML</li>
-                <li>SCSS</li>
-                <li>JavaScript</li>
-                <li>Parcel</li>
+                <li>streamlit</li>
+				<li>altair</li>
+				<li>sqlalchemy</li>
+				<li>pandas</li>
               </ul>
 
-              <div class="work__links">
-                <a href="https://nisar.surge.sh" target="_blank" class="link__text">
-                  Visit Site <span>&rarr;</span>
-                </a>
-                <a href="https://github.com/nisarhassan12/portfolio" title="View Source Code" target="_blank">
-                  <img src="./images/github.svg" class="work__code" alt="GitHub">
-                </a>
-              </div>
             </div>
             <div class="work__image-box">
-              <img src="./images/project-1.png" class="work__image" alt="Project 1" />
+              <img src="./images/update_analysis_tool.gif" class="work__image" alt="DIPS Analytics" />
             </div>
           </div>
 
           <div class="work__box">
             <div class="work__text">
-              <h3>Calculator</h3>
+              <h3>Voter Weight by U.S. State</h3>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod,
-                eius.
+                The topic of the Electoral College and whether it should exist comes up as a hot debate every four years during the U.S. presidential election.
+				It is well known that the Electoral College provides an advantage to voters in small states. But how big is this advantage?</p>
+				<p>
+				Using Microsoft Excel and Tableau, I created a visualization that quantified the amount of weight each voter has in each state. 
+				It is shocking to see the difference in weights between small states and large states. A vote in Wyoming has nearly five times
+				the amount of weight than a vote in California!
               </p>
               <ul class="work__list">
-                <li>React</li>
-                <li>Next.js</li>
-                <li>Node</li>
-                <li>MongoDB</li>
+                <li>Tableau</li>
+				<li>Microsoft Excel</li>
               </ul>
 
               <div class="work__links">
-                <a href="#" class="link__text">
-                  Visit Site <span>&rarr;</span>
+                <a href="https://public.tableau.com/app/profile/jerin.varghese/viz/VoterWeightbyU_S_State/VoterWeightMap" class="link__text">
+                  Live View
                 </a>
-                <a href="#">
+                <a href="https://public.tableau.com/app/profile/jerin.varghese/viz/VoterWeightbyU_S_State/VoterWeightMap">
+                  <img src="./images/tableau.svg" class="work__code" title="View Site" alt="Tableau">
+                </a>
+              </div>
+            </div>
+            <div class="work__image-box">
+              <img src="./images/voter_weight_map.png" class="work__image" alt="Project 1" />
+            </div>
+          </div>
+		  
+          <div class="work__box">
+            <div class="work__text">
+              <h3>Median Household Income Among Asian Americans</h3>
+              <p>
+                The U.S. Census Bureau reports Asians as the race with the highest median household income, as can be seen <a href = "https://www.census.gov/content/dam/Census/library/visualizations/2018/demo/p60-263/figure1.pdf">here</a>. 
+				However, looking at this demographic at a more disaggregate level reveals a diverse socioeconomic experience within the group itself.</p>
+				<p>
+				For background - at work, I was frequently using the American Community Survey (ACS) for a project about labor composition. The ACS is one of the largest household surveys
+				in the U.S., with nearly 3.5 million households surveyed per year. With the abundance of information it gathers, I wanted to use it to 
+				answer a different question - what does household income look like among Asian Americans? I used Python to import, parse, and calculate the data
+				I needed, and then used Microsoft Excel to create a visualization.
+              </p>
+              <ul class="work__list">
+                <li>pandas</li>
+				<li>Microsoft Excel</li>
+              </ul>
+
+              <div class="work__links">
+                <a href="https://github.com/jerinv/usa-asian-income" class="link__text">
+                  Source Code
+                </a>
+                <a href="https://github.com/jerinv/usa-asian-income">
                   <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
                 </a>
               </div>
             </div>
             <div class="work__image-box">
-              <img src="./images/project-2.png" class="work__image" alt="Project 1" />
+              <img src="./images/asian_american_income.png" class="work__image" alt="Project 1" />
             </div>
           </div>
 
           <div class="work__box">
             <div class="work__text">
-              <h3>Notificator</h3>
+              <h3>COVID-19 Deaths Visualization</h3>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod,
-                eius.
+                During the COVID-19 pandemic, many statistics that were used to compare the impact of the virus on countries 
+				across the world. More specifically, the absolute number of COVID-19 deaths were repeated to us on a daily basis, 
+				without taking into account the country's population. Using Python, I created a data visualization showing the 
+				number of COVID-19 deaths in some of the largest countries in the world, along with their share of the global population.
               </p>
               <ul class="work__list">
-                <li>React</li>
-                <li>Next.js</li>
-                <li>Node</li>
-                <li>MongoDB</li>
+                <li>pandas</li>
+                <li>matplotlib</li>
               </ul>
 
               <div class="work__links">
-                <a href="#" class="link__text">
-                  Visit Site <span>&rarr;</span>
+                <a href="https://github.com/jerinv/covid-analysis" class="link__text">
+                  Source Code
                 </a>
-                <a href="#">
+                <a href="https://github.com/jerinv/covid-analysis">
                   <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
                 </a>
               </div>
             </div>
             <div class="work__image-box">
-              <img src="./images/project-3.png" class="work__image" alt="Project 3" />
+              <img src="./images/covid19-deaths.png" class="work__image" alt="COVID-19 Deaths Visualization" />
+            </div>
+          </div>
+		  
+		  
+          <div class="work__box">
+            <div class="work__text">
+              <h3>Game of Thrones Screen Time Visualization</h3>
+              <p>
+                Following the (extremely disappointing) Game of Thrones finale, I was curious to know which characters had 
+				the most screen time on the show. Using a large database put together by a very passionate Game of Thrones viewer, 
+				I used Python to create a visualization that showed the top characters by screen time, broken down by season.
+              </p>
+              <ul class="work__list">
+                <li>pandas</li>
+                <li>matplotlib</li>
+              </ul>
+
+              <div class="work__links">
+                <a href="https://github.com/jerinv/game-of-thrones" class="link__text">
+                  Source Code
+                </a>
+                <a href="https://github.com/jerinv/game-of-thrones">
+                  <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
+                </a>
+              </div>
+            </div>
+            <div class="work__image-box">
+              <img src="./images/got_screentime.png" class="work__image" alt="Project 1" />
             </div>
           </div>
         </div>
@@ -166,15 +229,15 @@
 
     <section class="client" id="clients">
       <div class="row">
-        <h2>Clients</h2>
+        <h2>Technical Skills</h2>
         <div class="client__logos">
           <!-- Add logos of the clients or companies you'have worked with. -->
-          <img src="./images/ronjones.png" class="client__logo" alt="Company 2" />
-          <img src="./images/goldengrid.png" class="client__logo" alt="Company 3" />
-          <img src="./images/bullseye.png" class="client__logo" alt="Company 1" />
-          <img src="./images/mighty-furnitures.png" class="client__logo" alt="Company 1" />
-          <img src="./images/fastlane.png" class="client__logo" alt="Company 3" />
-          <img src="./images/chippy.png" class="client__logo" alt="Company 1" />
+          <img src="./images/python.png" class="client__logo" alt="Python" />
+          <img src="./images/sas.png" class="client__logo" alt="SAS" />
+          <img src="./images/sql_server.png" class="client__logo" alt="SQL Server" />
+          <img src="./images/excel.png" class="client__logo" alt="Microsoft Excel" />
+          <img src="./images/tableau.png" class="client__logo" alt="Tableau" />
+          <img src="./images/git.png" class="client__logo" alt="Git" />
         </div>
       </div>
     </section>
@@ -189,7 +252,15 @@
             <!-- Replace the below paragraph with info about yourself -->
             <p>
               I am currently a Data Scientist working for the Division of Industry Productivity Studies at
-			  the U.S. Burueau of Labor Statistics. 
+			  the U.S. Bureau of Labor Statistics. I am experienced in both Python and SAS programming languages, 
+			  building ETL pipelines, statistical analysis, data visualization, and presenting information to different
+			  types of audiences. I love getting into the itty-gritty of data extraction and cleaning, and finding creative 
+			  ways to automate repetitive tasks. </p>
+			  
+			  <p>Even in my free time, I find topics I'm curious about and investigate what insights 
+			  I can pull and present from available data. I have fun creating random visualizations.
+			  I love watching eSports and tennis (huge Federer fan), and enjoy weight-lifting,
+			  basketball, badminton, hiking, and golf. I'm also a Tetris fanatic. 
             </p>
             <!-- Provide a link to your resume -->
             <a href="./pdf/resume.pdf" class="btn">My Resume</a>
@@ -211,7 +282,7 @@
       <h2>Get in Touch</h2>
       <div class="contact__info">
         <p>
-          Have questions about my work? The best way is to reach out to me via e-mail.
+          Have questions about my work? The best way reach out to me is via e-mail.
         </p>
         <!-- Replace the email with yours -->
         <a href="jerinv93@gmail.com" class="btn">jerinv93@gmail.com</a>
@@ -241,12 +312,7 @@
       <p>
         &copy; 2020 - Template designed & developed by <a href="https://nisar.dev" class="link">Nisar</a>.
       </p>
-      <div class="footer__github-buttons">
-        <iframe
-          src="https://ghbtns.com/github-btn.html?user=nisarhassan12&repo=portfolio-template&type=watch&count=true"
-          frameborder="0" scrolling="0" width="170" height="20" title="Watch Portfolio Template on GitHub">
-        </iframe>
-      </div>
+
     </div>
   </footer>
 
